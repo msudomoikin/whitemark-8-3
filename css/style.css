@@ -377,6 +377,11 @@ a {
     padding: 0 80px;
   }
 }
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -588,6 +593,12 @@ a {
   color: #ffffff;
   background-color: #1d252d;
 }
+@media (max-width: 767px) {
+  .categories__button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
 .categories__button-wrapper {
   display: flex;
   gap: 30px;
@@ -620,19 +631,53 @@ a {
   align-items: flex-start;
   gap: 100px;
 }
+@media (max-width: 767px) {
+  .news-card {
+    flex-wrap: wrap;
+    padding: 30px 0;
+    gap: 10px;
+  }
+}
 .news-card .news-card__image {
-  flex-shrink: 0;
+  width: 340px;
+  height: 220px;
 }
 .news-card__content {
   display: grid;
   grid-template-columns: 400px 400px;
   gap: 72px;
 }
+@media (max-width: 767px) {
+  .news-card__content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
 .news-card__info {
   display: flex;
   gap: 20px;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .news-card__info {
+    gap: 10px;
+    flex-direction: column-reverse;
+  }
+}
+.news-card__date-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .news-card__date-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .news-card__title {
   margin: 0;
@@ -643,9 +688,35 @@ a {
   text-transform: uppercase;
   color: #1d252d;
 }
+@media (max-width: 767px) {
+  .news-card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.news-card__date {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #a7a8aa;
+}
+@media (max-width: 767px) {
+  .news-card__date {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
 .news-card__text {
   margin: 0;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
+  color: #1d252d;
+}
+@media (max-width: 767px) {
+  .news-card__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

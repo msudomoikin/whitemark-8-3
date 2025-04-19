@@ -27,6 +27,11 @@
             color: $color-white;
             background-color: $color-blue-charcoa;
         }
+
+        @include vp-767 {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 
     &__button-wrapper {
