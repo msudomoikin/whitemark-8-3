@@ -1,8 +1,17 @@
 .news {
     &__list {
+        display: grid;
+        grid-template-columns: 1fr;
         list-style-type: none;
         padding: 0;
         margin: 0;
+    }
+
+    @include vp-1023 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
         border-top: 1px solid $color-iron;
     }
 }

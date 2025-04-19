@@ -1,9 +1,9 @@
 .container {
-  max-width: 1728px;
+  max-width: 1528px;
   margin: 0 auto;
-  padding: 0 180px;
+  padding: 0 80px;
 
-  @include vp-1023 {
+  @media screen and (max-width: 1500px) {
     padding: 0 20px;
   }
 

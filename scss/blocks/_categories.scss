@@ -1,6 +1,18 @@
 .categories {
     padding-top: 40px;
-    margin-bottom: 20px;
+
+    @include vp-767 {
+        padding-top: 15px;
+    }
+
+    &__content {
+        margin-bottom: 20px;
+
+        @include vp-767 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
     &__list {
         padding: 0;
@@ -10,6 +22,25 @@
         flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 40px;
+
+        @include vp-767 {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+
+        @include vp-767 {
+            display: none;
+        }
+
+        &--all {
+            display: none;
+
+            @include vp-767 {
+                display: block;
+            }
+        }
     }
 
     &__button {
@@ -37,6 +68,10 @@
     &__button-wrapper {
         display: flex;
         gap: 30px;
+
+        @include vp-767 {
+            gap: 20px;
+        }
     }
 
     &__layout-button {
@@ -46,12 +81,20 @@
         align-items: center;
         background: none;
         color: $color-mischka;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 26px;
         cursor: pointer;
+        justify-content: space-between;
+        padding: 0;
 
         &--active {
             color: $color-blue-charcoa;
+        }
+    }
+
+    &__layout-button-text {
+        @include vp-767 {
+            display: none;
         }
     }
 }
