@@ -8,10 +8,22 @@
     }
 
     @include vp-1023 {
-        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    @include vp-767 {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     &__item {
-        border-top: 1px solid $color-iron;
+        border-bottom: 1px solid $color-iron;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+
     }
+
 }
