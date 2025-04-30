@@ -1,0 +1,24 @@
+.layout-button {
+    display: flex;
+    gap: 10px;
+    border: none;
+    align-items: center;
+    background: none;
+    color: $color-mischka;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 0;
+
+    &--active {
+        color: $color-blue-charcoa;
+        pointer-events: none;
+    }
+
+    &__text {
+        @include vp-767 {
+            display: none;
+        }
+    }
+}

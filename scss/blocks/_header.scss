@@ -17,6 +17,11 @@
     max-width: 1728px;
     padding: 0 50px;
 
+
+    @media screen and (max-width: 1500px) {
+      padding: 0 20px;
+    }
+
     @include vp-1023 {
       padding: 0 20px;
     }
@@ -50,6 +55,18 @@
     align-items: center;
     justify-content: center;
     margin: 0 70px 0 0;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      top: -15px;
+      left: -15px;
+      width: calc(100% + 30px);
+      min-height: calc(100% + 30px);
+      height: 120%;
+      content: "";
+      position: absolute;
+    }
 
     @include vp-1023 {
       width: 47px;
@@ -169,4 +186,29 @@
       display: flex;
     }
   }
+
+  &--menu-open {
+    background: $color-blue-charcoa;
+    border-bottom: 1px solid $color-gravel;
+
+    .header__menu-icon,
+    .header__logo,
+    .header__link,
+    .header__phone-icon,
+    .header__phone-text,
+    .header__page {
+      color: $color-white;
+    }
+
+    &~.main-menu {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+
+
+
+
+
 }

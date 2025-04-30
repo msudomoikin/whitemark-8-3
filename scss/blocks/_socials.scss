@@ -1,0 +1,21 @@
+.socials {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-river-bed;
+
+        &:hover,
+        &:focus-visible {
+            color: $color-ecru-white;
+        }
+    }
+
+}
