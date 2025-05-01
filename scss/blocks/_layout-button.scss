@@ -11,9 +11,17 @@
     justify-content: space-between;
     padding: 0;
 
+    &:hover,
+    &:focus-visible {
+        outline: none;
+        color: $color-blue-charcoa;
+        text-decoration: underline;
+    }
+
     &--active {
         color: $color-blue-charcoa;
         pointer-events: none;
+
     }
 
     &__text {

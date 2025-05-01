@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header header--menu-open">
+  <header class="header">
     <div class="container">
       <div class="header__content">
         <div class="header__left-col">
@@ -19,7 +19,8 @@
             <svg class="header__menu-icon" width="60" height="23" aria-hidden="true">
               <use xlink:href="images/sprite.svg#icon-menu"></use>
             </svg>
-            <svg class="header__menu-icon header__menu-icon--close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__menu-icon header__menu-icon--close" width="32" height="32" viewBox="0 0 32 32"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M5.51939 25.5368C5.26346 25.8015 5.27064 26.2236 5.53533 26.4795C5.80008 26.7354 6.22214 26.7282 6.47802 26.4635L25.8114 6.46355C26.0673 6.1988 26.0601 5.77673 25.7954 5.52086C25.5307 5.26492 25.1086 5.27211 24.8527 5.5368L5.51939 25.5368Z"
                 fill="white" />
@@ -97,7 +98,7 @@
       </div>
     </div>
     <a class="main-menu__select-realty" href="#">
-      <span class="main-menu__select-realty-text">выбрать недвижимость</span>
+      выбрать недвижимость
       <svg class="main-menu__select-realty-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <use href="images/sprite.svg#icon-arrow-circle"></use>
@@ -156,65 +157,65 @@
         <div class="categories__content">
           <ul class="categories__list">
             <li class="categories__item categories__item--all">
-              <button class="categories__button">Все проекты</button>
+              <button class="categories__button" type="button">Все проекты</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button categories__button--active">Все</button>
+              <button class="categories__button categories__button--active" type="button">Все</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Sminex</button>
+              <button class="categories__button" type="button">Sminex</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Малая Ордынка 19</button>
+              <button class="categories__button" type="button">Малая Ордынка 19</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Ильинка 3/8</button>
+              <button class="categories__button" type="button">Ильинка 3/8</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Городская усадьба</button>
+              <button class="categories__button" type="button">Городская усадьба</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Врубеля 4</button>
+              <button class="categories__button" type="button">Врубеля 4</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Фрунзенская набережная</button>
+              <button class="categories__button" type="button">Фрунзенская набережная</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Достижение</button>
+              <button class="categories__button" type="button">Достижение</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Тишинский бульвар</button>
+              <button class="categories__button" type="button">Тишинский бульвар</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Вестердам</button>
+              <button class="categories__button" type="button">Вестердам</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Лаврушинский</button>
+              <button class="categories__button" type="button">Лаврушинский</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Обыденский № 1</button>
+              <button class="categories__button" type="button">Обыденский № 1</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">West Garden</button>
+              <button class="categories__button" type="button">West Garden</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">Чистые пруды</button>
+              <button class="categories__button" type="button">Чистые пруды</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">LIFE TIME</button>
+              <button class="categories__button" type="button">LIFE TIME</button>
             </li>
             <li class="categories__item">
-              <button class="categories__button">TWIST</button>
+              <button class="categories__button" type="button">TWIST</button>
             </li>
           </ul>
           <div class="categories__button-wrapper">
-            <button class="layout-button layout-button--active layout-button--list">
+            <button class="layout-button layout-button--active layout-button--list" type="button">
               <svg width="24" height="16" viewBox="0 0 24 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <use href="images/sprite.svg#icon-list"></use>
               </svg>
               <span class="layout-button__text">Списком</span>
             </button>
-            <button class="layout-button layout-button--grid">
+            <button class="layout-button layout-button--grid" type="button">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <use href="images/sprite.svg#icon-grid"></use>
               </svg>
@@ -228,7 +229,7 @@
       <div class="container">
         <ul class="news__list">
           <li class="news__item">
-            <div class="news-card news-card--1">
+            <a class="news-card news-card--1" href="#">
               <picture>
                 <source media="(max-width: 767px)"
                   srcset="images/news/img-1-list-mobile.jpg 1x, images/news/img-1-list-mobile@2x.jpg 2x">
@@ -244,7 +245,7 @@
                     Пруды&raquo;</h2>
                   <div class="news-card__date-wrapper">
                     <p class="news-card__date">12 апреля 2024</p>
-                    <button class="categories__button">Чистые пруды</button>
+                    <span class="categories__button">Чистые пруды</span>
                   </div>
                 </div>
                 <p class="news-card__text">
@@ -256,10 +257,10 @@
                   здания, чтобы сохранить его изысканную
                 </p>
               </div>
-            </div>
+            </a>
           </li>
           <li class="news__item">
-            <div class="news-card news-card--2">
+            <a class="news-card news-card--2" href="#">
               <picture>
                 <source media="(max-width: 767px)"
                   srcset="images/news/img-2-list-mobile.jpg 1x, images/news/img-2-list-mobile@2x.jpg 2x">
@@ -273,7 +274,7 @@
                   <h2 class="news-card__title">&laquo;Дзен&raquo;. Главные места и&nbsp;секреты Чистых прудов</h2>
                   <div class="news-card__date-wrapper">
                     <p class="news-card__date">8 апреля 2024</p>
-                    <button class="categories__button">Чистые пруды</button>
+                    <span class="categories__button">Чистые пруды</span>
                   </div>
                 </div>
                 <p class="news-card__text">
@@ -284,10 +285,10 @@
                   начала&nbsp;ХХ века получил новое содержание и&nbsp;стал клубным?
                 </p>
               </div>
-            </div>
+            </a>
           </li>
           <li class="news__item">
-            <div class="news-card news-card--3">
+            <a class="news-card news-card--3" href="#">
               <picture>
                 <source media="(max-width: 767px)"
                   srcset="images/news/img-3-list-mobile.jpg 1x, images/news/img-3-list-mobile@2x.jpg 2x">
@@ -314,10 +315,10 @@
                   пентхаусы&nbsp;&mdash; выросли в&nbsp;цене на&nbsp;16%, с&nbsp;4,3 до&nbsp;5&nbsp;млн рублей
                 </p>
               </div>
-            </div>
+            </a>
           </li>
           <li class="news__item">
-            <div class="news-card news-card--4">
+            <a class="news-card news-card--4" href="#">
               <picture>
                 <source media="(max-width: 767px)"
                   srcset="images/news/img-4-list-mobile.jpg 1x, images/news/img-4-list-mobile@2x.jpg 2x">
@@ -333,7 +334,7 @@
                   </h2>
                   <div class="news-card__date-wrapper">
                     <p class="news-card__date">4 апреля 2024</p>
-                    <button class="categories__button">Ильинка 3/8</button>
+                    <span class="categories__button">Ильинка 3/8</span>
                   </div>
                 </div>
                 <p class="news-card__text">
@@ -344,11 +345,11 @@
                   6600&nbsp;растений. Территория клубных особняков в&nbsp;160 метрах от&nbsp;Красной площади начинается
                 </p>
               </div>
-            </div>
+            </a>
           </li>
 
           <li class="news__item">
-            <div class="news-card news-card--5">
+            <a class="news-card news-card--5" href="#">
               <picture>
                 <source media=" (max-width: 767px)"
                   srcset="images/news/img-5-list-mobile.jpg 1x, images/news/img-5-list-mobile@2x.jpg 2x">
@@ -364,7 +365,7 @@
                   </h2>
                   <div class="news-card__date-wrapper">
                     <p class="news-card__date">3 апреля 2024</p>
-                    <button class="categories__button">Ильинка 3/8</button>
+                    <span class="categories__button">Ильинка 3/8</span>
                   </div>
                 </div>
                 <p class="news-card__text">
@@ -374,11 +375,11 @@
                   облик клубных особняков в&nbsp;160 метрах от&nbsp;Красной площади. Об&nbsp;идее создания артефактов
                   и&nbsp;её&nbsp;воплощении в&nbsp;камне руками иранских мастеров смотрите в&nbsp;новом видео </p>
               </div>
-            </div>
+            </a>
           </li>
 
           <li class="news__item">
-            <div class="news-card news-card--6">
+            <a class="news-card news-card--6" href="#">
               <picture>
                 <source media=" (max-width: 767px)"
                   srcset="images/news/img-6-list-mobile.jpg 1x, images/news/img-6-list-mobile@2x.jpg 2x">
@@ -405,13 +406,11 @@
                   &bull; Школа будущего как из&nbsp;произведений
                 </p>
               </div>
-            </div>
+            </a>
           </li>
-
         </ul>
       </div>
     </section>
   </main>
 </body>
-
 </html>

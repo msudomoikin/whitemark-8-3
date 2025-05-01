@@ -56,7 +56,14 @@
         line-height: 20px;
         font-weight: 300;
 
+        &:hover,
+        &:focus-visible {
+            outline: none;
+            background-color: $color-chrome-white;
+        }
+
         &--active {
+            pointer-events: none;
             color: $color-white;
             background-color: $color-blue-charcoa;
         }

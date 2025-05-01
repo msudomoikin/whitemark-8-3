@@ -82,7 +82,7 @@
     height: 23px;
     width: 60px;
 
-    
+
     @include vp-1023 {
       height: 18px;
       width: 47px;
@@ -175,6 +175,8 @@
       display: none;
     }
 
+    min-width: 201px;
+
     &:hover,
     &:focus-visible {
       text-decoration: underline;
@@ -185,11 +187,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 147px;
 
     &:hover,
     &:focus-visible {
       opacity: 0.7;
     }
+
   }
 
   &__phone-text {
@@ -222,6 +226,18 @@
       color: $color-white;
     }
 
+    .header__phone-text:hover,
+    .header__phone-text:focus-visible {
+      color: $color-ecru-white;
+      text-decoration: none;
+    }
+
+    .header__link:hover,
+    .header__link:focus-visible {
+      color: $color-ecru-white;
+      text-decoration: none;
+    }
+
     .header__menu-icon {
       display: none;
 
@@ -234,8 +250,6 @@
       opacity: 1;
       pointer-events: all;
     }
-
-
   }
 
 
