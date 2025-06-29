@@ -8,6 +8,7 @@
   top: 0;
   background-color: $color-white;
   z-index: 10;
+  transition: background-color $transition-300;
 
   @include vp-1023 {
     padding: 17px 0 16px;
@@ -58,6 +59,13 @@
     cursor: pointer;
     position: relative;
 
+    transition: transform $transition-300;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+
     &::after {
       top: -15px;
       left: -15px;
@@ -81,7 +89,6 @@
   &__menu-icon {
     height: 23px;
     width: 60px;
-
 
     @include vp-1023 {
       height: 18px;
@@ -114,6 +121,7 @@
     width: 114px;
     display: flex;
     color: $color-blue-charcoa;
+    transition: opacity $transition-300;
 
     &:hover,
     &:focus-visible {
@@ -171,15 +179,16 @@
   }
 
   &__link {
+    background: linear-gradient($color-blue-charcoa 0 0) bottom left/ var(--underline-width, 0%) 1px no-repeat;
+    transition: background-size $transition-300;
+
     @include vp-767 {
       display: none;
     }
 
-    min-width: 201px;
-
     &:hover,
     &:focus-visible {
-      text-decoration: underline;
+      --underline-width: 100%;
     }
   }
 
@@ -188,6 +197,7 @@
     align-items: center;
     justify-content: center;
     min-width: 147px;
+    transition: opacity $transition-300;
 
     &:hover,
     &:focus-visible {

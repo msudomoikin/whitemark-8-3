@@ -11,6 +11,7 @@
         align-items: center;
         justify-content: center;
         color: $color-river-bed;
+        transition: color $transition-300;
 
         &:hover,
         &:focus-visible {

@@ -39,6 +39,7 @@
             &:first-child {
                 display: block;
             }
+
             display: none;
         }
     }
@@ -53,7 +54,7 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: 300;
-        transition: color ;
+        transition: background-color $transition-300;
 
         &:hover,
         &:focus-visible {

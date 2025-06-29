@@ -408,6 +408,7 @@ a {
   top: 0;
   background-color: #ffffff;
   z-index: 10;
+  transition: background-color ease-in 0.3s;
 }
 @media (max-width: 1023px) {
   .header {
@@ -457,6 +458,10 @@ a {
   margin: 0 70px 0 0;
   cursor: pointer;
   position: relative;
+  transition: transform ease-in 0.3s;
+}
+.header__menu:hover {
+  transform: scale(1.1);
 }
 .header__menu::after {
   top: -15px;
@@ -513,6 +518,7 @@ a {
   width: 114px;
   display: flex;
   color: #1d252d;
+  transition: opacity ease-in 0.3s;
 }
 .header__logo-link:hover, .header__logo-link:focus-visible {
   opacity: 0.7;
@@ -570,7 +576,8 @@ a {
   }
 }
 .header__link {
-  min-width: 201px;
+  background: linear-gradient(#1d252d 0 0) bottom left/var(--underline-width, 0%) 1px no-repeat;
+  transition: background-size ease-in 0.3s;
 }
 @media (max-width: 767px) {
   .header__link {
@@ -578,13 +585,14 @@ a {
   }
 }
 .header__link:hover, .header__link:focus-visible {
-  text-decoration: underline;
+  --underline-width: 100%;
 }
 .header__phone {
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 147px;
+  transition: opacity ease-in 0.3s;
 }
 .header__phone:hover, .header__phone:focus-visible {
   opacity: 0.7;
@@ -690,6 +698,7 @@ a {
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
+  transition: background-color ease-in 0.3s;
 }
 .categories__button:hover, .categories__button:focus-visible {
   outline: none;
@@ -728,15 +737,22 @@ a {
   cursor: pointer;
   justify-content: space-between;
   padding: 0;
+  transition: color ease-in 0.3s;
 }
 .layout-button:hover, .layout-button:focus-visible {
   outline: none;
   color: #1d252d;
-  text-decoration: underline;
 }
 .layout-button--active {
   color: #1d252d;
   pointer-events: none;
+}
+.layout-button__text {
+  background: linear-gradient(#1d252d 0 0) bottom left/var(--underline-width, 0%) 1px no-repeat;
+  transition: background-size ease-in 0.3s;
+}
+.layout-button__text:hover {
+  --underline-width: 100%;
 }
 @media (max-width: 767px) {
   .layout-button__text {
@@ -800,6 +816,7 @@ a {
   align-items: flex-start;
   gap: 100px;
   cursor: pointer;
+  transition: background-color ease-in 0.3s;
 }
 .news-card:hover, .news-card:focus-visible {
   outline: none;
@@ -1014,6 +1031,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity ease-in 0.3s;
 }
 .news-card--grid:hover::after {
   opacity: 1;
@@ -1034,6 +1052,7 @@ a {
   height: 100%;
   z-index: 2;
   overflow-y: auto;
+  transition: opacity ease-in 0.3s;
 }
 @media screen and (max-width: 1365px) {
   .main-menu {
@@ -1087,6 +1106,7 @@ a {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.5);
   display: flex;
+  transition: color ease-in 0.3s;
 }
 .main-menu__link:hover, .main-menu__link:focus-visible {
   outline: none;
@@ -1194,6 +1214,7 @@ a {
   align-items: center;
   justify-content: center;
   color: #4A5157;
+  transition: color ease-in 0.3s;
 }
 .socials__link:hover, .socials__link:focus-visible {
   outline: none;
