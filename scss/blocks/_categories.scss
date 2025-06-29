@@ -31,17 +31,15 @@
     }
 
     &__item {
-
-        @include vp-767 {
+        &:first-child {
             display: none;
         }
 
-        &--all {
-            display: none;
-
-            @include vp-767 {
+        @include vp-767 {
+            &:first-child {
                 display: block;
             }
+            display: none;
         }
     }
 

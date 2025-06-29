@@ -148,11 +148,10 @@
     &--grid {
         padding: 100px 40px 40px;
         position: relative;
-        height: 100%;
+        min-height: 100%;
         gap: 0;
         align-items: flex-end;
         flex-direction: row-reverse;
-        background-size: cover;
 
         @include vp-767 {
             padding: 50px 20px 20px;
@@ -170,7 +169,11 @@
         }
 
         .news-card__image {
-            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            position: absolute;
         }
 
         .news-card__content {
@@ -180,6 +183,7 @@
 
         .news-card__info {
             flex-direction: column-reverse;
+            gap: 10px;
         }
 
         .news-card__title,
@@ -188,8 +192,12 @@
         }
 
         .news-card__title {
-            font-size: 16px;
-            line-height: 20px;
+
+            @include vp-767 {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
         }
 
         .news-card__link {
@@ -205,37 +213,17 @@
             pointer-events: none;
         }
 
-        &.news-card--1 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
-                url(../../images/news/img-1-grid.jpg);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+            z-index: 1;
         }
 
-        &.news-card--2 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
-                url(../../images/news/img-2-grid.jpg);
-        }
-
-        &.news-card--3 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
-                url(../../images/news/img-3-grid.jpg);
-        }
-
-        &.news-card--4 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
-                url(../../images/news/img-4-grid.jpg);
-        }
-
-        &.news-card--5 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
-                url(../../images/news/img-5-grid.jpg);
-        }
-
-        &.news-card--6 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
-                url(../../images/news/img-6-grid.jpg);
-        }
-
-        
 
         &::after {
             opacity: 0;
